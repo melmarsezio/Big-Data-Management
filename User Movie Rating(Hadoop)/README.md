@@ -31,8 +31,8 @@ where (M,M) shows pairs of movies, [] indicates the list of users and their rati
 
 
 **Tips:**
-+ You may need to implement more than one Mapper/Reducer in this assignment. You need to look at chaining in MapReduce jobs: https://stackoverflow.com/questions/38111700/chaining-of-mapreduce-jobs#answer-38113499
-+ You also may need a self-join to find movie pairs, the reduce-side join pattern can help: https://www.edureka.co/blog/mapreduce-example-reduce-side-join/
++ You may need to implement more than one Mapper/Reducer in this assignment. You need to look at chaining in MapReduce jobs: [https://stackoverflow.com/questions/38111700/chaining-of-mapreduce-jobs#answer-38113499](https://stackoverflow.com/questions/38111700/chaining-of-mapreduce-jobs#answer-38113499)
++ You also may need a self-join to find movie pairs, the reduce-side join pattern can help: [https://www.edureka.co/blog/mapreduce-example-reduce-side-join/](https://www.edureka.co/blog/mapreduce-example-reduce-side-join/)
 + If the key and the values for a Mapper differ from those of Reduce, you need to set the following configurations:
 job.setMapOutputKeyClass(), job.setOutputKeyClass(), job.setMapOutputValueClass(), job.setapOutputValueClass()
 + Do not set Combiner in this assignment ( job.setCombiner() )
