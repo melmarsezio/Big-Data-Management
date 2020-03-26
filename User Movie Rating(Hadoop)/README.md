@@ -42,5 +42,9 @@ job.setMapOutputKeyClass(), job.setOutputKeyClass(), job.setMapOutputValueClass(
 + Please be aware of iterating over values inside a reducer (Iterable<MyWritable> values). When looping through the Iterable value list, each Object instance is reused internally by the reducer. So if you add them to another list, at the end of the process, all of the elements in the new list will be the same as the last object you added to the list.
 
 ## Instruction
->+ cmd run `$ javac -cp ".:Hadoop-Core.jar" AssigOne{zid}.java ` to compile [`AssigOne{zid}.java`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/AssigOnez5237028.java) with dependency [`Hadoop-Core.jar`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/Hadoop-Core.jar)  
->+ cmd run `$ java -cp ".:Hadoop-Core.jar" AssigOne{zid}  INPUT_PATH OUTPUT_PATH` to test the file, `INPUT_PATH` could be [`ratings.dat`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/ratings.dat) for example.
+>+ Download [`AssigOnez5237028.java`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/AssigOnez5237028.java) and [`Hadoop-Core.jar`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/Hadoop-Core.jar) to your work directory
+>+ cd into the target directory
+>+ cmd run `$ javac -cp ".:Hadoop-Core.jar" AssigOnez5237028.java ` to compile [`AssigOnez5237028.java`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/AssigOnez5237028.java) with dependency [`Hadoop-Core.jar`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/Hadoop-Core.jar)  
+>+ cmd run `$ java -cp ".:Hadoop-Core.jar" AssigOnez5237028  INPUT_PATH OUTPUT_PATH` to test the file, `INPUT_PATH` could be the path to [`ratings.dat`](https://github.com/melmarsezio/Big-Data-Management/blob/master/User%20Movie%20Rating(Hadoop)/ratings.dat) for example or your own testing data.  
+>
+> All results will be generated and saved in `OUTPUT_PATH`
