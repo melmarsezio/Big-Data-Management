@@ -48,4 +48,6 @@ N3,6,N0-N1-N3
 
 ## Instruction
 >+ cmd run `$ javac -cp ".:Spark-Core.jar" AssigTwo{zid}.java ` to compile [`AssigTwo{zid}.java`](https://github.com/melmarsezio/Big-Data-Management/blob/master/Single-Source%20Shortest%20Path(Spark)/AssigTwoz5237028.java) with dependency [`Spark-Core.jar`](https://github.com/melmarsezio/Big-Data-Management/blob/master/Single-Source%20Shortest%20Path(Spark)/Spark-Core.jar)  
->+ cmd run `$ java -cp ".:Spark-Core.jar" AssigTwo{zid} STARTING_NODE INPUT_PATH OUTPUT_PATH` to test the file, `INPUT_PATH` could be [`graph.txt`](https://github.com/melmarsezio/Big-Data-Management/blob/master/Single-Source%20Shortest%20Path(Spark)/graph.txt) for example.
+>+ cmd run `$ java -cp ".:Spark-Core.jar" AssigTwo{zid} STARTING_NODE INPUT_PATH OUTPUT_PATH` to test the file, `INPUT_PATH` could be [`graph.txt`](https://github.com/melmarsezio/Big-Data-Management/blob/master/Single-Source%20Shortest%20Path(Spark)/graph.txt) for example.   
+>
+> All results will be generated and saved in `OUTPUT_PATH`
