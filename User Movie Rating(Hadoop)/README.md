@@ -28,3 +28,15 @@ The output of your code should be in the form as below:
 where (M,M) shows pairs of movies, [] indicates the list of users and their ratings. For example, (U5,1,3) shows U5 has rated M1 and M2 with 1 and 3 respectively.
 
 **(please note that Your output should exactly be formatted as the output example above.)**
+
+
+**Tips:**
++ You may need to implement more than one Mapper/Reducer in this assignment. You need to look at chaining in MapReduce jobs: https://stackoverflow.com/questions/38111700/chaining-of-mapreduce-jobs#answer-38113499
++ You also may need a self-join to find movie pairs, the reduce-side join pattern can help: https://www.edureka.co/blog/mapreduce-example-reduce-side-join/
++ If the key and the values for a Mapper differ from those of Reduce, you need to set the following configurations:
+job.setMapOutputKeyClass(), job.setOutputKeyClass(), job.setMapOutputValueClass(), job.setapOutputValueClass()
++ Do not set Combiner in this assignment ( job.setCombiner() )
++ If the Value for the Mapper/Reducer is a complex object, you need to implement a Writerable Interface class
++ If the Key for the Mapper/Reducer is a complex object, you also need to implement a WritableComparable Interface
++ You can use ArrayWritable to store Array values, but you need to implement its toString() function to be able to write the object into a text file.
++ Please be aware of iterating over values inside a reducer (Iterable<MyWritable> values). When looping through the Iterable value list, each Object instance is reused internally by the reducer. So if you add them to another list, at the end of the process, all of the elements in the new list will be the same as the last object you added to the list.
