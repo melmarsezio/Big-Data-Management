@@ -1,7 +1,7 @@
 # Single-Source Shortest Path(Spark)
 #### Coursework assignment for Big Data Management
 ## Specification (Problem Definition)
-![](https://i1.wp.com/algorithms.tutorialhorizon.com/files/2018/03/Weighted-Graph.png?ssl=1)  
+![Weighted-Graph.png?ssl=1](https://i1.wp.com/algorithms.tutorialhorizon.com/files/2018/03/Weighted-Graph.png?ssl=1)  
 A path in a graph can be defined as the set of consecutive nodes such that there is an edge from one node to the next node in the sequence. The shortest path between two nodes can be defined as the path that has the minimum total weight of the edges along the path. For example, the shortest path from Node 1 to Node 4 is Node1-> Node3 -> Node4 with the distance of 4.
 
 In this assignment, you are aksed to calculate the distance from a starting node (e.g., N0) to all other nodes.
